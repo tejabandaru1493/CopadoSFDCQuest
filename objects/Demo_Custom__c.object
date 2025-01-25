@@ -9,6 +9,7 @@
         <formFactor>Large</formFactor>
         <type>Default</type>
     </actionOverrides>
+
     <actionOverrides>
         <actionName>Accept</actionName>
         <formFactor>Small</formFactor>
@@ -156,11 +157,11 @@
     <externalSharingModel>Private</externalSharingModel>
     <label>Demo Object</label>
     <nameField>
-        <label>Demo Custom  Name</label>
+        <label>Demo Custom Name</label>
         <type>Text</type>
     </nameField>
     <pluralLabel>Demo Objects</pluralLabel>
-    <searchLayouts/>
+    <searchLayouts />
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
     <fields>
@@ -180,6 +181,7 @@
         <unique>false</unique>
     </fields>
     <fields>
+
         <fullName>Testing_Copado__c</fullName>
         <externalId>false</externalId>
         <label>Testing Copado</label>
@@ -189,14 +191,28 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+
+        <fullName>Field_Three__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Field One</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Field_Ten__c</fullName>
+        <defaultValue>false</defaultValue>
+        <label>Field Ten</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
     <validationRules>
         <fullName>DemoValidationRuleOne</fullName>
         <active>true</active>
         <description>created for Demo.</description>
         <errorConditionFormula>AND(
- Field_One__c,
- ISBLANK(Field_Two__c)
-)</errorConditionFormula>
+            Field_One__c,
+            ISBLANK(Field_Two__c)
+            )</errorConditionFormula>
         <errorMessage>Please enter Field two if Field one is checked.</errorMessage>
     </validationRules>
 </CustomObject>
