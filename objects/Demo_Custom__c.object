@@ -188,11 +188,11 @@
         <type>Checkbox</type>
     </fields>
     <fields>
-        <fullName>TectCopado__c</fullName>
+        <fullName>Field_Ten__c</fullName>
         <defaultValue>false</defaultValue>
-        <label>Test Copado</label>
+        <label>Field Ten</label>
         <trackTrending>false</trackTrending>
-        <type>Text</type>
+        <type>Checkbox</type>
     </fields>
 
     <validationRules>
